@@ -6,9 +6,12 @@ public class Articulo {
 	
 	private Double precio;
 
-	public Articulo(String nombre, double precio) {
+	private Double descuento;
+
+	public Articulo(String nombre, double precio double descuento) {
 		this.nombre = nombre;
 		this.precio = precio;
+		this.descuento = descuento;
 	}
 
 	public String getNombre() {
@@ -25,5 +28,13 @@ public class Articulo {
 
 	public void setPrecio(Double precio) {
 		this.precio = precio;
+	}
+
+	public Double getDescuento() {
+	    return descuento;
+	}
+
+	public void setDescuento(Double descuento) {
+	    this.descuento = descuento;
 	}
 }
